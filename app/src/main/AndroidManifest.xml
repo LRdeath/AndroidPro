@@ -17,6 +17,7 @@
         </activity>
 
         <activity android:name=".view.TextViewActivity" />
+        <activity android:name=".view.PhotoCameraActivity" />
     </application>
 
 </manifest>

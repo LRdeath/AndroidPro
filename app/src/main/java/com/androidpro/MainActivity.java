@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.androidpro.adapter.MainAdapter;
+import com.androidpro.view.PhotoCameraActivity;
 import com.androidpro.view.TextViewActivity;
 
 import java.util.ArrayList;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
   private void initData() {
     ArrayList<String> list = new ArrayList<>();
     list.add("TextView");
+    list.add("相机");
     mAdapter.bindData(list);
     mListView.setAdapter(mAdapter);
     mAdapter.notifyDataSetChanged();
@@ -38,8 +40,12 @@ public class MainActivity extends AppCompatActivity {
           public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             switch (position) {
               case 0:
-                  Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
-                  startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
+                startActivity(intent);
+                break;
+              case 1:
+                Intent intent1 = new Intent(MainActivity.this, PhotoCameraActivity.class);
+                startActivity(intent1);
                 break;
               default:
                 break;
