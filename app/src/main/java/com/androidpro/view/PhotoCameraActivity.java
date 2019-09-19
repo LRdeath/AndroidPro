@@ -3,6 +3,7 @@ package com.androidpro.view;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
@@ -12,6 +13,8 @@ import android.widget.ImageView;
 
 import com.androidpro.R;
 
+import java.io.File;
+
 /**
  * @author chenzhiwei
  * @version 1.0
@@ -20,6 +23,7 @@ import com.androidpro.R;
  */
 public class PhotoCameraActivity extends AppCompatActivity {
   private ImageView showIv;
+  private Uri imageUri;
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -32,6 +36,16 @@ public class PhotoCameraActivity extends AppCompatActivity {
               @Override
               public void onClick(View v) {
                   Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                  File newFile = new File(getFilesDir(),"images");
+                  if (!newFile.exists()){
+                      newFile.mkdirs();
+                  }
+                  File imagesFile = new File(newFile,"case.jpg");
+                  imageUri = Uri.parse(imagesFile.toString());
+                  intent.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);
+                  //添加运行时权限
+                  intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION
+                          |Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
                   startActivityForResult(intent,0);
               }
             });
@@ -44,11 +58,15 @@ public class PhotoCameraActivity extends AppCompatActivity {
             if (data == null ||data.getExtras()==null){
                 return;
             }
+
             //获取拍照后的图片
-            Bitmap bmp = (Bitmap) data.getExtras().get("data");
-            if (bmp!=null){
-                showIv.setImageBitmap(bmp);
+//            Bitmap bmp = (Bitmap) data.getExtras().get("data");
+            if (imageUri!=null) {
+                showIv.setImageURI(imageUri);
             }
+//            if (bmp!=null){
+//                showIv.setImageBitmap(bmp);
+//            }
         }
     }
 }

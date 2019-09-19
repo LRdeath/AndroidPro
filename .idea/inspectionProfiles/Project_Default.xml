@@ -32,6 +32,28 @@
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
       <option name="myAdditionalJavadocTags" value="date" />
     </inspection_tool>
+    <inspection_tool class="JdCyclomaticComplexityBlock" enabled="false" level="BLOCKER (超高复杂度)" enabled_by_default="false" />
+    <inspection_tool class="JdCyclomaticComplexityCritical" enabled="false" level="CRITICAL (高复杂度)" enabled_by_default="false" />
+    <inspection_tool class="JdCyclomaticComplexityMajor" enabled="false" level="MAJOR (中复杂度)" enabled_by_default="false" />
+    <inspection_tool class="JdCyclomaticComplexityWarning" enabled="false" level="WARNING (低复杂度)" enabled_by_default="false" />
+    <inspection_tool class="JdEnumConstantsMustHaveComment" enabled="false" level="CRITICAL " enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeALIOSS" enabled="false" level="高危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeAllowAllHoseName" enabled="false" level="中危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeAllowBackup" enabled="false" level="低危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeCheckTrust" enabled="false" level="中危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeCryptoLength" enabled="false" level="中危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeDatabase" enabled="false" level="中危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeDebuggable" enabled="false" level="低危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeECBModule" enabled="false" level="中危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafePermission" enabled="false" level="低危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeReadFile" enabled="false" level="中危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeSharedPre" enabled="false" level="中危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeWeakEncrypt" enabled="false" level="中危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSafeWebviewError" enabled="false" level="中危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSavePasswd" enabled="false" level="低危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidSystemOut" enabled="false" level="WARNING " enabled_by_default="false" />
+    <inspection_tool class="JdJDAndroidWebviewFileAccess" enabled="false" level="低危风险" enabled_by_default="false" />
+    <inspection_tool class="JdJDLog" enabled="false" level="MAJOR " enabled_by_default="false" />
     <inspection_tool class="JdJDSafeDruid" enabled="false" level="中危风险" enabled_by_default="false" />
     <inspection_tool class="JdJDSafeFastJson" enabled="false" level="中危风险" enabled_by_default="false" />
     <inspection_tool class="JdJDSafeHessianInput" enabled="false" level="中危风险" enabled_by_default="false" />
