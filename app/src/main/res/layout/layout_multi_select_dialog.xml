@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <LinearLayout
+      android:id="@+id/content_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginLeft="14dp"
+      android:layout_marginRight="14dp"
+      android:background="@drawable/bg_normal_dialog"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      android:paddingTop="8dp"
+      android:paddingBottom="22dp"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+      <TextView
+          android:id="@+id/tv_select_title"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:paddingLeft="18dp"
+          android:paddingTop="14dp"
+          android:text="选择理由"
+          android:textColor="@color/t_2"
+          android:textSize="14dp"
+          />
+      <ImageView
+          android:id="@+id/iv_select_close"
+          android:layout_width="23dp"
+          android:layout_height="23dp"
+          android:paddingTop="4dp"
+          android:paddingRight="12dp"
+          android:paddingBottom="8dp"
+          android:src="@drawable/icon_close"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="18dp"
+        android:paddingTop="11dp"
+        android:paddingRight="18dp"
+        android:paddingBottom="18dp"
+        />
+
+    <com.androidpro.view.SelectView
+        android:id="@+id/btn_select_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/selector_submit_btn"
+        android:paddingLeft="84dp"
+        android:paddingTop="9dp"
+        android:paddingRight="84dp"
+        android:paddingBottom="9dp"
+        android:text="@string/submit"
+        android:textColor="@color/t_2"
+        android:textSize="16dp"
+
+        />
+
+
+  </LinearLayout>
+</FrameLayout>

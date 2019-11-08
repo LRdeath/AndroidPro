@@ -7,7 +7,6 @@ import android.os.Message;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -18,8 +17,8 @@ import android.widget.TextView;
 
 import com.androidpro.adapter.MainAdapter;
 import com.androidpro.service.VzerProxy;
-import com.androidpro.view.PhotoCameraActivity;
-import com.androidpro.view.TextViewActivity;
+import com.androidpro.ui.PhotoCameraActivity;
+import com.androidpro.ui.TextViewActivity;
 
 import java.util.ArrayList;
 

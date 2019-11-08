@@ -1,4 +1,4 @@
-package com.androidpro.view;
+package com.androidpro.ui;
 
 import android.content.Intent;
 import android.graphics.Typeface;
